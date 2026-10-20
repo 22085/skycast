@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Skycast</string>
+    <string name="search_title">搜索城市</string>
+    <string name="search_hint">输入城市名称</string>
+    <string name="search_empty">没有找到相关城市</string>
+    <string name="retry">重试</string>
+    <string name="error_network">网络连接失败，请检查网络设置</string>
+    <string name="error_location">无法获取当前位置</string>
+    <string name="error_generic">出了点问题，请稍后重试</string>
+    <string name="current_location">当前位置</string>
+    <string name="feels_like">体感 %1$d°</string>
+    <string name="humidity">湿度</string>
+    <string name="wind">风速</string>
+    <string name="pressure">气压</string>
+    <string name="visibility">能见度</string>
+    <string name="uv_index">紫外线</string>
+    <string name="air_quality">空气质量</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="hourly_forecast">24 小时预报</string>
+    <string name="daily_forecast">7 天预报</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="high_low">最高 %1$d° / 最低 %2$d°</string>
+    <string name="precipitation">降水概率</string>
+    <string name="widget_description">显示当前位置的天气</string>
+    <string name="data_source">数据来源 Open-Meteo</string>
+
+    <!-- 天气状况 -->
+    <string name="cond_clear">晴</string>
+    <string name="cond_partly_cloudy">多云</string>
+    <string name="cond_cloudy">阴</string>
+    <string name="cond_fog">雾</string>
+    <string name="cond_drizzle">毛毛雨</string>
+    <string name="cond_rain">雨</string>
+    <string name="cond_freezing_rain">冻雨</string>
+    <string name="cond_snow">雪</string>
+    <string name="cond_snow_grains">米雪</string>
+    <string name="cond_showers">阵雨</string>
+    <string name="cond_snow_showers">阵雪</string>
+    <string name="cond_thunderstorm">雷阵雨</string>
+    <string name="cond_thunderstorm_hail">雷雨伴冰雹</string>
+    <string name="cond_unknown">未知</string>
+
+    <!-- 空气质量 -->
+    <string name="aqi_good">优</string>
+    <string name="aqi_fair">良</string>
+    <string name="aqi_moderate">中等</string>
+    <string name="aqi_poor">较差</string>
+    <string name="aqi_very_poor">很差</string>
+    <string name="aqi_extremely_poor">极差</string>
+</resources>

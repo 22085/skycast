@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+app/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Android Studio
+captures/
+*.ap_
+*.aab
+
+# Keystore
+*.jks
+*.keystore
+*key_store*
+
+# Misc
+*.log
+*.tmp
+*.swp
