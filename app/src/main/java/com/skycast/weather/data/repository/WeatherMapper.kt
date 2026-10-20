@@ -3,7 +3,6 @@ package com.skycast.weather.data.repository
 import com.skycast.weather.data.remote.dto.AirQualityResponse
 import com.skycast.weather.data.remote.dto.CurrentWeather as CurrentDto
 import com.skycast.weather.data.remote.dto.DailyForecast
-import com.skycast.weather.data.remote.dto.ForecastResponse
 import com.skycast.weather.data.remote.dto.HourlyForecast
 import com.skycast.weather.domain.model.AirQuality
 import com.skycast.weather.domain.model.CurrentWeather
@@ -96,22 +95,4 @@ internal object WeatherMapper {
     }
 }
 
-/** 从完整响应里取最近的小时，保证「当前小时」排在首位。 */
-internal fun HourlyForecast.startingFrom(nowIso: String, zone: ZoneId): Int {
-    val nowLocal = try {
-        Instant.parse(nowIso).atZone(zone).toLocalDateTime()
-    } catch (_: Exception) {
-        return 0
-    }
-    val idx = time.indexOfFirst { t ->
-        try {
-            !Instant.parse(t).atZone(zone).toLocalDateTime().isBefore(nowLocal)
-        } catch (_: Exception) {
-            false
-        }
-    }
-    return if (idx <= 0) 0 else idx
-}
 
-@Suppress("unused")
-private fun unusedForecastRef(dto: ForecastResponse) = dto.latitude
